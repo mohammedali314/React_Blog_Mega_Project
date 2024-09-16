@@ -10,7 +10,6 @@ export class AuthService {
             .setEndpoint(conf.appwriteUrl)
             .setProject(conf.appwriteProjectId);
         this.account = new Account(this.client);
-        console.log('Available methods:', Object.keys(this.account))
     }
 
 
